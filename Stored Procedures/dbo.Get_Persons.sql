@@ -11,7 +11,7 @@ CREATE PROCEDURE [dbo].[Get_Persons]
 AS
 BEGIN
 	SET NOCOUNT ON;
-
+-- Это наши изменения
 	SELECT a.id,a.family [Фамилия],b.xname [Город],c.cname [Страна] FROM Persons a 
 	INNER JOIN Cities b ON a.id_city = b.id 
 	INNER JOIN Countries c ON a.id_country = c.id
