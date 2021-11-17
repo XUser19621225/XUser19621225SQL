@@ -1,6 +1,4 @@
-SET QUOTED_IDENTIFIER ON
-GO
-SET ANSI_NULLS ON
+﻿SET QUOTED_IDENTIFIER, ANSI_NULLS ON
 GO
 -- =============================================
 -- Author:		<Author,,Name>
@@ -11,7 +9,7 @@ CREATE PROCEDURE [dbo].[Get_Cities]
 AS
 BEGIN
 	SET NOCOUNT ON;
-
+	DECLARE @s0 VARCHAR(100) = ''
     -- Insert statements for procedure here
 	SELECT * FROM Cities
 END
